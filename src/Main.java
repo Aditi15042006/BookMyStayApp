@@ -1,7 +1,16 @@
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * Book My Stay App
+ * Use Case 3: Centralized Room Inventory Management
+ *
+ * Demonstrates centralized room inventory using HashMap
+ * instead of separate availability variables.
+ *
+ * @author Aditi
+ * @version 3.0
+ */
 class RoomInventory {
 
     private HashMap<String, Integer> inventory;
@@ -9,7 +18,6 @@ class RoomInventory {
     // Constructor initializes room availability
     public RoomInventory() {
         inventory = new HashMap<>();
-
         inventory.put("Single Room", 5);
         inventory.put("Double Room", 3);
         inventory.put("Suite Room", 2);
@@ -28,23 +36,18 @@ class RoomInventory {
     // Display inventory
     public void displayInventory() {
         System.out.println("\n--- Current Room Inventory ---");
-
         for (Map.Entry<String, Integer> entry : inventory.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
     }
 }
 
-/**
- * Application Entry Point for UC3
- */
 public class UseCase3InventorySetup {
 
     public static void main(String[] args) {
 
         System.out.println("===== Book My Stay - Hotel Booking System v3.0 =====");
 
-        // Initialize inventory
         RoomInventory inventory = new RoomInventory();
 
         // Display inventory
