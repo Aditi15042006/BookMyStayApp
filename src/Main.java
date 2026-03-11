@@ -61,12 +61,10 @@ public class UseCase2RoomInitialization {
 
         System.out.println("===== Book My Stay - Hotel Booking System v2.0 =====");
 
-        // Create room objects
         Room single = new SingleRoom();
         Room doubleRoom = new DoubleRoom();
         Room suite = new SuiteRoom();
 
-        // Static availability variables
         int singleAvailable = 5;
         int doubleAvailable = 3;
         int suiteAvailable = 2;
